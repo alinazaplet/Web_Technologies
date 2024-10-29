@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Shop 2.0</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="#" method="post" class="pizza-form" onsubmit="addOrder(event)">
+        <table>
+            <tr>
+                <th colspan="2" class="center-heading"><h2>Pizza Shop 2.0</h2></th>
+            </tr>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" name="name" placeholder="Enter your name" required></td>
+            </tr>
+            <tr>
+                <td><label for="topping">Pizza Topping:</label></td>
+                <td> 
+                    <!--код, який створює форму з перемикачами для вибору (radio buttons)-->
+                    <input type="radio" id="supreme" name="topping" value="Supreme" required>
+                    <label for="supreme">Supreme</label><br>
+                    <input type="radio" id="vegetarian" name="topping" value="Vegetarian">
+                    <label for="vegetarian">Vegetarian</label><br>
+                    <input type="radio" id="hawaiian" name="topping" value="Hawaiian">
+                    <label for="hawaiian">Hawaiian</label>
+                </td>
+            </tr>
+            <tr>
+                <!--код створення випадаючого списку-->
+                <td><label for="sauce">Pizza Sauce:</label></td>
+                <td>
+                    <select id="sauce" name="sauce" required>
+                        <option value="Tomato">Tomato</option>
+                        <option value="BBQ">BBQ</option>
+                        <option value="Creamy Garlic">Creamy Garlic</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <!--код для створення чекбоксів-->
+                <td><label for="extras">Optional Extras:</label></td>
+                <td>
+                    <input type="checkbox" id="cheese" name="extra_cheese">
+                    <label for="cheese">Extra Cheese</label><br>
+                    <input type="checkbox" id="gluten_free" name="gluten_free">
+                    <label for="gluten_free">Gluten Free Base</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><label for="instructions">Delivery Instructions:</label> 
+                    <textarea id="instructions" name="instructions" placeholder="Any specific instructions?" rows="4"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Send my Order</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <h2>Your Orders</h2>
+    <table id="ordersTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Topping</th>
+                <th>Sauce</th>
+                <th>Extras</th>
+                <th>Instructions</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

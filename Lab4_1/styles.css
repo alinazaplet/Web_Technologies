@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(135deg, #c2dbf2, #e6e6fa);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.pizza-form {
+    margin-bottom: 20px; /* Відступ під формою */
+}
+
+table {
+    width: 600px; 
+    margin: 0 auto;
+    border: 1px solid black; /* чіткі лінії для комірок */
+    background-color: white;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+    border-collapse: separate; /* Це дозволяє налаштувати відстань між клітинками */
+    border-spacing: 5px;
+}
+
+th, td {
+    border: 1px solid black; /* чіткі лінії для комірок */
+    padding: 4px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.center-heading {
+    text-align: center;
+}
+
+input[type="text"], select, textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #656363;
+    border-radius: 5px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+select {
+    background-image: linear-gradient(180deg, #fbfcfc, #d9d9dd); /* Змінюємо фон самого списку */
+    color: #333; /* Колір тексту */
+    border: 1px solid #b9b8b8; /* Межа списку */
+    padding: 4px;
+    
+}
